@@ -1,0 +1,46 @@
+// Cursor Rules for TAHSEEN (Flutter, Adaptive & Personalized Arabic Learning Platform)
+//
+// 1. Stack & Architecture
+//    - Flutter (Dart), feature-first structure.
+//    - Riverpod for state management.
+//    - go_router for navigation.
+//    - freezed & json_serializable for all models (with from/toJson).
+//    - dio for HTTP, drift or hive for local storage.
+//    - Clean architecture: domain/data/presentation layers.
+//    - All code must be null-safe, SOLID, and testable.
+//
+// 2. Domain & Features
+//    - CEFR A1–C2, 4 skills: Listening (الاستماع), Speaking (الكلام), Reading (القراءة), Writing (الكتابة).
+//    - Core features: Onboarding, Pre-test adaptif (IRT/CAT), AI Planner (مسار التعلم), Materi adaptif, Latihan adaptif per-skill, Feedback AI Tutor, Remedial, Post-test, Sertifikat, Unlocking system.
+//    - All learning modules use Arabic only (no transliteration).
+//
+// 3. UX & Localization
+//    - Bahasa Indonesia as default UI language, ready for i18n.
+//    - Basic accessibility: scalable fonts, semantic widgets.
+//
+// 4. File Structure (always create):
+//    - lib/core/
+//    - lib/features/onboarding/
+//    - lib/features/assessment/
+//    - lib/features/assessment/engine/irt.dart
+//    - lib/features/assessment/engine/item_bank.dart
+//    - lib/features/assessment/engine/session.dart
+//    - lib/features/ai/ai_client.dart
+//    - lib/features/ai/ai_planner.dart
+//    - lib/features/ai/ai_tutor.dart
+//    - lib/features/learning/modules/
+//    - lib/features/learning/paths/
+//
+// 5. Coding Conventions
+//    - Separate UI (widgets) from logic (notifiers/providers/services).
+//    - All models: use freezed, include from/toJson.
+//    - Provide unit tests & basic widget tests for critical flows.
+//    - Use strongly typed Dart everywhere.
+//
+// 6. When requirements are unclear:
+//    - Ask for clarification and propose options/assumptions before implementation.
+//
+// 7. Custom Rule
+//    - Semua modul pembelajaran menggunakan bahasa Arab saja, tanpa transliterasi.
+//
+// End of Cursor Rules
