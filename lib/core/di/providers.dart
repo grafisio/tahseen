@@ -19,13 +19,10 @@ final routerProvider = Provider<GoRouter>((ref) {
 });
 
 final aiClientProvider = Provider<AiClient>((ref) {
-  final dio = AiClient().client
-    ..options = (AiClient().client.options
-      ..baseUrl = Env.apiBaseUrl
-      ..connectTimeout = Duration(milliseconds: Env.timeoutMs)
-      ..receiveTimeout = Duration(milliseconds: Env.timeoutMs)
-    );
-  return AiClient(dio: dio);
+  if (!Env.isConfigured) {
+    return AiClientLocalMock();
+  }
+  return AiClientHttp(baseUrl: Env.apiBaseUrl, apiKey: Env.aiApiKey);
 });
 
 

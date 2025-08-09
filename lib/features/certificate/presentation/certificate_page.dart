@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-class CertificatePage extends StatelessWidget {
-  const CertificatePage({super.key});
+class CertificateScreen extends StatelessWidget {
+  const CertificateScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Certificate')),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Sertifikat')),
+      body: const Center(child: Text('Badge/XP/Sertifikat (placeholder)')),
     );
   }
 }
