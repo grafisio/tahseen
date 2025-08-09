@@ -1,4 +1,4 @@
-# Arabi
+# Tahseen
 
 Adaptive & Personalized Arabic Learning Platform (Flutter + Riverpod + GoRouter)
 

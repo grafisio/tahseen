@@ -6,18 +6,18 @@ import 'package:go_router/go_router.dart';
 import 'core/di/providers.dart';
 
 void main() {
-  runApp(const ProviderScope(child: ArabiApp()));
+  runApp(const ProviderScope(child: TahseenApp()));
 }
 
-class ArabiApp extends ConsumerWidget {
-  const ArabiApp({super.key});
+class TahseenApp extends ConsumerWidget {
+  const TahseenApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = ref.watch(appThemeProvider).light();
     final router = ref.watch(routerProvider);
     return MaterialApp.router(
-      title: 'Arabi',
+      title: 'Tahseen',
       theme: theme,
       routerConfig: router,
     );
