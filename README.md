@@ -56,6 +56,20 @@ lib/
 - `/posttest`
 - `/certificate`
 
+## Environment variables
+
+Salin `.env.example` menjadi `.env` (jangan commit `.env`) dan teruskan nilainya via `--dart-define` saat menjalankan aplikasi:
+
+```bash
+flutter run \
+  --dart-define=API_BASE_URL=https://api.example.com \
+  --dart-define=AI_API_KEY=sk-xxxx \
+  --dart-define=AI_MODEL=gpt-4o-mini \
+  --dart-define=TIMEOUT_MS=30000
+```
+
+`AiClient` tersedia melalui provider `aiClientProvider`.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
