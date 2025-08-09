@@ -1,0 +1,7 @@
+[
+  {"id":"A1_reading_1","skill":"reading","stem":"Bacalah teks pendek ini.","options":["A","B","C","D"],"answerKey":"A","metadata":{"cefr":"A1","irt":{"a":0.9,"b":-0.8,"c":0.2},"tags":["comprehension"],"estimatedTimeSec":60}},
+  {"id":"A1_reading_2","skill":"reading","stem":"Arti kata ...","options":["A","B","C","D"],"answerKey":"B","metadata":{"cefr":"A1","irt":{"a":0.9,"b":-0.2,"c":0.2},"tags":["vocab"],"estimatedTimeSec":60}},
+  {"id":"A1_reading_3","skill":"reading","stem":"Sinonim ...","options":["A","B","C","D"],"answerKey":"C","metadata":{"cefr":"A1","irt":{"a":0.9,"b":0.3,"c":0.2},"tags":["vocab"],"estimatedTimeSec":60}},
+  {"id":"A1_reading_4","skill":"reading","stem":"Ide pokok ...","options":["A","B","C","D"],"answerKey":"D","metadata":{"cefr":"A1","irt":{"a":0.9,"b":0.7,"c":0.2},"tags":["comprehension"],"estimatedTimeSec":60}},
+  {"id":"A1_reading_5","skill":"reading","stem":"Informasi spesifik ...","options":["A","B","C","D"],"answerKey":"A","metadata":{"cefr":"A1","irt":{"a":0.9,"b":1.0,"c":0.2},"tags":["comprehension"],"estimatedTimeSec":60}}
+]

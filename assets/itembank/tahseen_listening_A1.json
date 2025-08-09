@@ -1,0 +1,7 @@
+[
+  {"id":"A1_listening_1","skill":"listening","stem":"Contoh soal 1","options":["A","B","C","D"],"answerKey":"A","metadata":{"cefr":"A1","irt":{"a":0.9,"b":-1.0,"c":0.2},"tags":["kosa-kata"],"estimatedTimeSec":60}},
+  {"id":"A1_listening_2","skill":"listening","stem":"Contoh soal 2","options":["A","B","C","D"],"answerKey":"B","metadata":{"cefr":"A1","irt":{"a":0.9,"b":-0.5,"c":0.2},"tags":["tata-bahasa"],"estimatedTimeSec":60}},
+  {"id":"A1_listening_3","skill":"listening","stem":"Contoh soal 3","options":["A","B","C","D"],"answerKey":"C","metadata":{"cefr":"A1","irt":{"a":0.9,"b":0.0,"c":0.2},"tags":["topik-kampus"],"estimatedTimeSec":60}},
+  {"id":"A1_listening_4","skill":"listening","stem":"Contoh soal 4","options":["A","B","C","D"],"answerKey":"D","metadata":{"cefr":"A1","irt":{"a":0.9,"b":0.5,"c":0.2},"tags":["kosa-kata"],"estimatedTimeSec":60}},
+  {"id":"A1_listening_5","skill":"listening","stem":"Contoh soal 5","options":["A","B","C","D"],"answerKey":"A","metadata":{"cefr":"A1","irt":{"a":0.9,"b":1.0,"c":0.2},"tags":["tata-bahasa"],"estimatedTimeSec":60}}
+]

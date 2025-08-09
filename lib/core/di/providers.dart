@@ -9,7 +9,6 @@ import '../../features/ai/ai_client.dart';
 import '../utils/utils.dart';
 import '../../features/assessment/services/item_bank_service.dart';
 import '../../features/notifications/notification_service.dart';
-import '../../features/gamification/providers/gamification_provider.dart';
 import '../config/flavor.dart';
 
 final loggerProvider = Provider<Logger>((ref) => Logger());

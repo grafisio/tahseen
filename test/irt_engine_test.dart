@@ -28,7 +28,7 @@ void main() {
     final items = [
       for (var i = 0; i < 50; i++) makeItem('i$i', 1.0, (i - 25) / 10.0, Skill.listening)
     ];
-    final session = AssessmentSession(skill: Skill.listening, itemBank: items, minItems: 5, targetSe: 0.6);
+    final session = AssessmentSession(skill: Skill.listening, itemBank: items);
     // simulate alternating correctness improving around theta
     for (int k = 0; k < 20; k++) {
       final item = session.nextItem();

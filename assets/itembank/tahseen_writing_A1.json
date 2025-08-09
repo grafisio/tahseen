@@ -1,0 +1,7 @@
+[
+  {"id":"A1_writing_1","skill":"writing","stem":{"prompt":"Tulis kalimat sederhana tentang hobi."},"options":null,"answerKey":"text","metadata":{"cefr":"A1","irt":{"a":0.9,"b":-0.5},"tags":["syntax"],"estimatedTimeSec":60}},
+  {"id":"A1_writing_2","skill":"writing","stem":{"prompt":"Tulis perkenalan singkat."},"options":null,"answerKey":"text","metadata":{"cefr":"A1","irt":{"a":0.9,"b":0.0},"tags":["dialog"],"estimatedTimeSec":60}},
+  {"id":"A1_writing_3","skill":"writing","stem":{"prompt":"Tulis daftar belanja."},"options":null,"answerKey":"text","metadata":{"cefr":"A1","irt":{"a":0.9,"b":0.4},"tags":["vocab"],"estimatedTimeSec":60}},
+  {"id":"A1_writing_4","skill":"writing","stem":{"prompt":"Tulis deskripsi gambar."},"options":null,"answerKey":"text","metadata":{"cefr":"A1","irt":{"a":0.9,"b":-1.0},"tags":["prompt"],"estimatedTimeSec":60}},
+  {"id":"A1_writing_5","skill":"writing","stem":{"prompt":"Tulis kalimat tentang keluarga."},"options":null,"answerKey":"text","metadata":{"cefr":"A1","irt":{"a":0.9,"b":1.0},"tags":["syntax"],"estimatedTimeSec":60}}
+]

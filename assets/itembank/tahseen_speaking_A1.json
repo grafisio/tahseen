@@ -1,0 +1,7 @@
+[
+  {"id":"A1_speaking_1","skill":"speaking","stem":{"prompt":"Deskripsikan gambar sederhana"},"options":null,"answerKey":"rubric","metadata":{"cefr":"A1","irt":{"a":0.9,"b":-0.5},"tags":["prompt"],"estimatedTimeSec":60}},
+  {"id":"A1_speaking_2","skill":"speaking","stem":{"prompt":"Perkenalkan diri"},"options":null,"answerKey":"rubric","metadata":{"cefr":"A1","irt":{"a":0.9,"b":0.0},"tags":["dialog"],"estimatedTimeSec":60}},
+  {"id":"A1_speaking_3","skill":"speaking","stem":{"prompt":"Sebutkan 3 hobi"},"options":null,"answerKey":"rubric","metadata":{"cefr":"A1","irt":{"a":0.9,"b":0.5},"tags":["vocab"],"estimatedTimeSec":60}},
+  {"id":"A1_speaking_4","skill":"speaking","stem":{"prompt":"Tanya arah"},"options":null,"answerKey":"rubric","metadata":{"cefr":"A1","irt":{"a":0.9,"b":-1.0},"tags":["dialog"],"estimatedTimeSec":60}},
+  {"id":"A1_speaking_5","skill":"speaking","stem":{"prompt":"Pesan makanan"},"options":null,"answerKey":"rubric","metadata":{"cefr":"A1","irt":{"a":0.9,"b":1.0},"tags":["transaction"],"estimatedTimeSec":60}}
+]

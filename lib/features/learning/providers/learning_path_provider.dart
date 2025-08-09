@@ -52,22 +52,26 @@ final profileProvider = StateProvider<Profile>((ref) => const Profile(userId: 'u
 final abilitySnapshotProvider = StateProvider<AbilitySnapshot>((ref) => const AbilitySnapshot());
 
 class LearningPathNotifier extends StateNotifier<LearningPathState> {
-  LearningPathNotifier({required this.ref, required List<LearningModule> initialCatalog})
+  LearningPathNotifier({required this.ref, required List<LearningModule> initialCatalog, AiPlanner? planner})
       : super(LearningPathState(
           catalog: initialCatalog,
           path: LearningPath(id: 'initial', modules: initialCatalog, lockedModules: const []),
         ));
 
   final Ref ref;
+  AiPlanner _planner = const AiPlanner();
 
-  void replan() {
-    final planner = const AiPlanner();
-    final abilities = ref.read(abilitySnapshotProvider);
-    final insights = ref.read(plannerInsightProvider);
-    final planned = planner.planOrReplanPath(
-      abilities: abilities,
+  void setPlanner(AiPlanner planner) {
+    _planner = planner;
+  }
+
+  void replan({AbilitySnapshot? abilities, PlannerInsight? insights}) {
+    final AbilitySnapshot abilitiesNonNull = abilities ?? ref.read(abilitySnapshotProvider);
+    final insightsEff = insights ?? ref.read(plannerInsightProvider);
+    final planned = _planner.planOrReplanPath(
+      abilities: abilitiesNonNull,
       catalog: state.catalog,
-      insights: insights,
+      insights: insightsEff,
     );
     state = state.copyWith(path: planned);
   }
@@ -80,7 +84,9 @@ final learningPathProvider = StateNotifierProvider<LearningPathNotifier, Learnin
     const LearningModule(id: 'm2', skill: Skill.listening, cefr: CEFR.A2, title: 'Mendengar Dasar'),
     const LearningModule(id: 'm3', skill: Skill.writing, cefr: CEFR.A1, title: 'Menulis Dasar', prerequisites: ['m1']),
   ];
-  return LearningPathNotifier(ref: ref, initialCatalog: catalog);
+  final n = LearningPathNotifier(ref: ref, initialCatalog: catalog);
+  n.setPlanner(const AiPlanner());
+  return n;
 });
 
 // Module progress + hook to replan when mastered
