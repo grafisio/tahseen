@@ -1,0 +1,5 @@
+class AssessmentSession {
+  const AssessmentSession();
+}
+
+
