@@ -1,0 +1,1 @@
+[{"id":"R1","skill":"reading","stem":"نص قراءة 1","options":["أ","ب","ج","د"],"answerKey":"ج","metadata":{"cefr":"A1","a":1.2,"b":-0.5,"c":0.0,"tags":["comprehension"]}},{"id":"R2","skill":"reading","stem":"نص قراءة 2","options":["أ","ب","ج","د"],"answerKey":"د","metadata":{"cefr":"A2","a":1.0,"b":0.5,"c":0.0,"tags":["inference"]}}]
